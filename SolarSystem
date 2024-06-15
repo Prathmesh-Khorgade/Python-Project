@@ -1,0 +1,72 @@
+class Neptune():
+    def nep(self):
+        print("well Come To Neptune")
+class Uranus():
+    def ura(self):
+        print("well Come To Uranus")
+        o.getNeptune().nep()
+class Jupiter():
+    def jup(self):
+        print("well Come To Jupiter")
+        o.getUranus().ura()
+class Mars():
+    def mar(self):
+        print("well Come To Mars")
+        o.getJupiter().jup()
+class Earth():
+    def ear(self):
+        print("well Come To Earth")
+        o.getMars().mar()
+
+class Venus():
+    def ven(self):
+        print("well Come To Venus")
+        o.getEarth().ear()
+
+class Mercury():
+    def mer(self):
+        print("well Come To Mercury")
+        o.getVenus().ven()
+
+class Sun():
+    def solarSystem(self):
+        
+        print("="*100)
+        print("..... well Come To Solar System.....")
+        print("="*100)
+        o.getMercury().mer()
+
+
+class objectfactory():
+    sun = Sun()
+    mer = Mercury()
+    ven = Venus()
+    ear = Earth()
+    mar = Mars()
+    jup = Jupiter()
+    ura = Uranus()
+    nep =  Neptune()
+    
+    
+    
+    def getSun(self):
+        return self.sun
+    def getMercury(self):
+        return self.mer
+    def getVenus(self):
+        return self.ven
+    def getEarth(self):
+        return self.ear
+    def getMars(self):
+        return self.mar
+    def getJupiter(self):
+        return self.jup
+    def getUranus(self):
+        return self.ura
+    def getNeptune(self):
+        return self.nep
+   
+    
+    
+o = objectfactory()
+o.getSun().solarSystem()
